@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon"> 
+	<title>Экспресс касса</title>
+    <link rel="icon" href="img/favicon.png" type="image/x-icon"> 
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="gray-bg">
+    <section class="main-wrap">
+        <section class="l-side">
+            <div class="admin_btn">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="fixed-l-menu">
+                <div class="l-side__string l-side__string_pad-bot">
+                    <a class="express-img" href="http://www.garantexpress.ru/"><img class="logo_ee" src="img/logo.png"></a>     
+                    <span class="l-side__string-text l-side__string-text_min-pad">
+                        <span class="l-side__string-word">экспресс</span>
+                        <span class="l-side__string-word l-side__string-word_light">касса</span>
+                    </span>
+                </div>
+                <div class="l-side__string l-side__string_hovered">
+                    <div class="l-side__img">
+                        <img class="not-hovered" src="img/cashbox.png">
+                        <img class="hovered" src="img/cashbox_blue.png">
+                    </div>
+                    <span class="l-side__string-text l-side__string-text_middle">
+                        <span>Кассы</span>
+                    </span>
+                </div>
+                <div class="l-side__string">
+                    <div class="l-side__img">
+                        <img class="not-hovered" src="img/bills.png">
+                        <img class="hovered" src="img/bills_blue.png">
+                    </div>
+                    <span class="l-side__string-text l-side__string-text_middle">
+                        <span>Чеки</span>
+                    </span>
+                </div>
+                <div class="l-side__string">
+                    <div class="l-side__img">
+                        <img class="not-hovered" src="img/center.png">
+                        <img class="hovered" src="img/center_blue.png">
+                    </div>
+                    <span class="l-side__string-text l-side__string-text_middle">
+                        <span>Электронные документы</span>
+                    </span>
+                </div>
+                <div class="l-side__string">
+                    <div class="l-side__img">
+                        <img class="not-hovered" src="img/license.png">
+                        <img class="hovered" src="img/license_blue.png">
+                    </div>
+                    <span class="l-side__string-text l-side__string-text_middle">
+                        <span>Лицензии</span>
+                    </span>
+                </div>
+                <div class="l-side__string">
+                    <div class="l-side__img">
+                        <img class="not-hovered" src="img/settings.png">
+                        <img class="hovered" src="img/settings_blue.png">
+                    </div>
+                    <span class="l-side__string-text l-side__string-text_middle">
+                        <span>Настройки</span>
+                    </span>
+                </div>
+                <div class="l-side__string l-side__string_last">
+                    <div class="l-side__string-text l-side__string-text_pad-bot l-side__string-text_middle">
+                        <span class="without-fill">//</span>
+                    </div>
+                    <div class="l-side__string-text l-side__string-text_pad-bot l-side__string-text_middle">
+                        <span class="without-fill">8 800 333 8888</span>
+                    </div>
+                    <div class="l-side__string-text l-side__string-text_pad-bot l-side__string-text_middle">
+                        <a class="l-side__link" href="#">Оставить отзыв</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="r-side">
+            <div class="header-top header-top_bg">
+                <div class="header-top__container header-top__container_media container_paddings container_margin">
+                    <div class="header-top__left-logo">
+                        <p class="header-top__text header-top__text_media">Центр технического обслуживания "Авангард"</p>
+                    </div>
+                    <div>
+                        <a href="#" class="header-top__img-right"><img src="img/refresh.png"></a>
+                        <a href="#" class="header-top__img-right"><img src="img/user.png"></a>
+                        <a href="#" class="header-top__img-right"><img src="img/help.png"></a>
+                        <a href="#" class="header-top__img-right"><img src="img/exit.png"></a>
+                    </div>
+                </div>
+            </div>
+             <div class="form_marg-none">
+                  <h1 class="form__title">Подключение ККТ через пин-код</h1>
+              </div>  
+            <form action="">
+                <div class="flex-centered">
+                    <div class="form form_marg-none">
+                        <h1 class="form__title">Пин-код</h1>
+                        <div>
+                            <div class="form__block-flex">
+                                <label for="num_card" class="form__label" for="login">Номер карты</label>
+                                <input id="num_card" class="form__input login" type="text">
+                            </div>
+                            <div class="form__block-flex">
+                                <label for="key" class="form__label" for="pass">Секретный ключ</label>
+                                <input id="key" class="form__input pass" type="password">
+                            </div>
+                        </div>
+                        <div class="warning-block-position">
+                            <div class="warning-block">
+                                <p class="warning-block__text">Для подключения кассы подпишите соглашение об обмене электронными документами и договор с ОФД</p>
+                            </div>
+                        </div>
+                        <div>
+                            <input class="form__button form__button_margin" type="button" value="Продолжить">
+                        </div>
+                         <div>
+                            <input class="form__button form__button_margin form__button_cancel" type="button" value="Отменить">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </section>
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

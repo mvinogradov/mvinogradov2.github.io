@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Экспресс касса</title>
+    <link rel="icon" href="img/favicon.png" type="image/x-icon"> 
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="gray-bg">
+   
+    <section class="main-wrap">
+        <section class="l-side">
+            <div class="admin_btn">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="fixed-l-menu">
+                <div class="l-side__string l-side__string_pad-bot">
+                    <a class="express-img" href="http://www.garantexpress.ru/"><img class="logo_ee" src="img/logo.png"></a>     
+                    <span class="l-side__string-text l-side__string-text_min-pad">
+                        <span class="l-side__string-word">экспресс</span>
+                        <span class="l-side__string-word l-side__string-word_light">касса</span>
+                    </span>
+                </div>
+                <div class="l-side__string l-side__string_hovered">
+                    <div class="l-side__img">
+                        <img class="not-hovered" src="img/cashbox.png">
+                        <img class="hovered" src="img/cashbox_blue.png">
+                    </div>
+                    <span class="l-side__string-text l-side__string-text_middle">
+                        <span>Кассы</span>
+                    </span>
+                </div>
+                <div class="l-side__string">
+                    <div class="l-side__img">
+                        <img class="not-hovered" src="img/bills.png">
+                        <img class="hovered" src="img/bills_blue.png">
+                    </div>
+                    <span class="l-side__string-text l-side__string-text_middle">
+                        <span>Чеки</span>
+                    </span>
+                </div>
+                <div class="l-side__string">
+                    <div class="l-side__img">
+                        <img class="not-hovered" src="img/center.png">
+                        <img class="hovered" src="img/center_blue.png">
+                    </div>
+                    <span class="l-side__string-text l-side__string-text_middle">
+                        <span>Электронные документы</span>
+                    </span>
+                </div>
+                <div class="l-side__string">
+                    <div class="l-side__img">
+                        <img class="not-hovered" src="img/license.png">
+                        <img class="hovered" src="img/license_blue.png">
+                    </div>
+                    <span class="l-side__string-text l-side__string-text_middle">
+                        <span>Лицензии</span>
+                    </span>
+                </div>
+                <div class="l-side__string">
+                    <div class="l-side__img">
+                        <img class="not-hovered" src="img/settings.png">
+                        <img class="hovered" src="img/settings_blue.png">
+                    </div>
+                    <span class="l-side__string-text l-side__string-text_middle">
+                        <span>Настройки</span>
+                    </span>
+                </div>
+                <div class="l-side__string l-side__string_last">
+                    <div class="l-side__string-text l-side__string-text_pad-bot l-side__string-text_middle">
+                        <span class="without-fill">//</span>
+                    </div>
+                    <div class="l-side__string-text l-side__string-text_pad-bot l-side__string-text_middle">
+                        <span class="without-fill">8 800 333 8888</span>
+                    </div>
+                    <div class="l-side__string-text l-side__string-text_pad-bot l-side__string-text_middle">
+                        <a class="l-side__link" href="#">Оставить отзыв</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="r-side">
+            <div class="header-top header-top_v2 header-top_width header-top_bg">
+                <div class="header-top__container header-top__container_height header-top__container_media container_paddings container_margin">
+                    <div class="header-top__left-logo">
+                        <p class="header-top__text header-top__text_media">Центр технического обслуживания "Авангард"</p>
+                    </div>
+                    <div>
+                        <a href="#" class="header-top__img-right"><img src="img/refresh.png"></a>
+                        <a href="#" class="header-top__img-right"><img src="img/user.png"></a>
+                        <a href="#" class="header-top__img-right"><img src="img/help.png"></a>
+                        <a href="#" class="header-top__img-right"><img src="img/exit.png"></a>
+                    </div>
+                </div>
+                
+                <div class="row row_margin_none">
+       <div class="input-field col s3">
+          <input id="name_kas" type="text" class="validate">
+          <label for="name_kas">Название кассы</label>
+        </div>
+        <div class="input-field col s2">
+          <input id="rnm" type="text" class="validate" minlength="19" maxlength="19">
+          <label for="rnm">РНМ</label>
+        </div>
+        <div class="input-field col s2">
+          <input id="numb_fn" type="text" class="validate" minlength="19" maxlength="19">
+          <label for="numb_fn">Номер ФН</label>
+        </div>
+        <div class="input-field col s2">
+          <input id="numb_zn" type="text" class="validate" >
+          <label for="numb_zn">Заводской</label>
+        </div>
+         <div class="input-field col s2">
+        <a class="waves-effect waves-light btn search_cash_btn">Показать</a>
+        </div>
+      </div>
+                
+            </div>
+            <div class="table-box">
+                <div class="row row_not">
+       <div class="input-field col s3">
+                    <a class="waves-effect waves-light btn green add_cash_btn"><i class="material-icons left">add</i>Добавить кассу</a>
+                    </div>
+                    <div class="input-field col s2 ">
+                        <input hidden type="checkbox" id="test5"/>
+                        <label for="test5">Все кассы (9)</label>
+                    </div>
+                    <div class="input-field col s2 ">
+                        <input hidden type="checkbox" id="test6"/>
+                        <label for="test6">Проблемные (2)</label>
+                    </div>
+                    <div class="input-field col s2 ">
+                        <input hidden type="checkbox" id="test7"/>
+                        <label for="test7">Требующие внимания (1)</label>
+                    </div>
+                    <div class="input-field col s2 ">
+                        <input hidden type="checkbox" id="test8"/>
+                        <label for="test8">Работающие (6)</label>
+                    </div>
+                </div>
+                <div class="table-block">
+                   <table class="highlight">
+        <thead>
+          <tr >
+              <th></th>
+              <th>№</th>
+              <th>Касса</th>
+              <th>Модель</th>
+              <th>Адрес установки</th>
+              <th>Соединение</th>
+              <th>Данные</th>
+              <th>Чеки</th>
+              
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><span class="circle circle_green"></span></td>
+            <td>1</td>
+            <td>Касса № 1 в продовольственном отделе</td>
+            <td>Атол 160Ф</td>
+            <td>г. Москва,	Научный проезд 19</td>
+            <td>02.02.2018 14:12</td>
+            <td>02.02.2018 14:12</td>
+            <td data-href="#123123"><img class="not-hovered" src="img/bills.png">
+            <img class="hovered" src="img/bills_blue.png"></td>
+          </tr>
+         <tr class="tr_my">
+            <td><span class="circle circle_green"></span></td>
+            <td>1</td>
+            <td>Касса № 1 в продовольственном отделе</td>
+            <td>Атол 160Ф</td>
+            <td>г. Москва,	Научный проезд 19</td>
+            <td>02.02.2018 14:12</td>
+            <td>02.02.2018 14:12</td>
+            <td data-href="#123123"><img class="not-hovered" src="img/bills.png">
+            <img class="hovered" src="img/bills_blue.png"></td>
+          </tr>
+          <tr>
+            <td><span class="circle circle_green"></span></td>
+            <td>1</td>
+            <td>Касса № 1 в продовольственном отделе</td>
+            <td>Атол 160Ф</td>
+            <td>г. Москва,	Научный проезд 19</td>
+            <td>02.02.2018 14:12</td>
+            <td>02.02.2018 14:12</td>
+            <td data-href="#123123"><img class="not-hovered" src="img/bills.png">
+            <img class="hovered" src="img/bills_blue.png"></td>
+          </tr>
+           <tr>
+            <td><span class="circle circle_green"></span></td>
+            <td>1</td>
+            <td>Касса № 1 в продовольственном отделе</td>
+            <td>Атол 160Ф</td>
+            <td>г. Москва,	Научный проезд 19</td>
+            <td>02.02.2018 14:12</td>
+            <td>02.02.2018 14:12</td>
+            <td data-href="#123123"><img class="not-hovered" src="img/bills.png">
+            <img class="hovered" src="img/bills_blue.png"></td>
+          </tr>
+           <tr>
+            <td><span class="circle circle_green"></span></td>
+            <td>1</td>
+            <td>Касса № 1 в продовольственном отделе</td>
+            <td>Атол 160Ф</td>
+            <td>г. Москва,	Научный проезд 19</td>
+            <td>02.02.2018 14:12</td>
+            <td>02.02.2018 14:12</td>
+            <td data-href="#123123"><img class="not-hovered" src="img/bills.png">
+            <img class="hovered" src="img/bills_blue.png"></td>
+          </tr>
+           <tr>
+            <td><span class="circle circle_green"></span></td>
+            <td>1</td>
+            <td>Касса № 1 в продовольственном отделе</td>
+            <td>Атол 160Ф</td>
+            <td>г. Москва,	Научный проезд 19</td>
+            <td>02.02.2018 14:12</td>
+            <td>02.02.2018 14:12</td>
+            <td data-href="#123123"><img class="not-hovered" src="img/bills.png">
+            <img class="hovered" src="img/bills_blue.png"></td>
+          </tr>
+             <tr>
+            <td><span class="circle circle_green"></span></td>
+            <td>1</td>
+            <td>Касса № 1 в продовольственном отделе</td>
+            <td>Атол 160Ф</td>
+            <td>г. Москва,	Научный проезд 19</td>
+            <td>02.02.2018 14:12</td>
+            <td>02.02.2018 14:12</td>
+            <td data-href="#123123"><img class="not-hovered" src="img/bills.png">
+            <img class="hovered" src="img/bills_blue.png"></td>
+          </tr>
+             <tr>
+            <td><span class="circle circle_green"></span></td>
+            <td>1</td>
+            <td>Касса № 1 в продовольственном отделе</td>
+            <td>Атол 160Ф</td>
+            <td>г. Москва,	Научный проезд 19</td>
+            <td>02.02.2018 14:12</td>
+            <td>02.02.2018 14:12</td>
+            <td data-href="#123123"><img class="not-hovered" src="img/bills.png">
+            <img class="hovered" src="img/bills_blue.png"></td>
+          </tr>
+             <tr>
+            <td><span class="circle circle_green"></span></td>
+            <td>1</td>
+            <td>Касса № 1 в продовольственном отделе</td>
+            <td>Атол 160Ф</td>
+            <td>г. Москва,	Научный проезд 19</td>
+            <td>02.02.2018 14:12</td>
+            <td>02.02.2018 14:12</td>
+            <td data-href="#123123"><img class="not-hovered" src="img/bills.png">
+            <img class="hovered" src="img/bills_blue.png"></td>
+          </tr>
+        </tbody>
+      </table>
+                    <ul class="pagination block-pagination">
+                        <li class="disabled block-pagination__arrows"><a href="#!"><img src="img/prev.png"></a></li>
+                        <li class="active"><a href="#!">1</a></li>
+                        <li class="waves-effect"><a href="#!">2</a></li>
+                        <li class="waves-effect"><a href="#!">3</a></li>
+                        <li class="waves-effect"><a href="#!">4</a></li>
+                        <li class="waves-effect"><a href="#!">5</a></li>
+                        <li class="waves-effect block-pagination__arrows block-pagination__arrows_left-block"><a href="#!"><img class="block-pagination__arrows_left" src="img/next.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </section>
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
