@@ -20,11 +20,7 @@
             </div>
             <div class="fixed-l-menu">
                 <div class="l-side__string l-side__string_pad-bot">
-                        <a class="express-img" href="http://www.garantexpress.ru/"><img class="logo_ee" src="img/logo.png"></a>     
-                    <span class="l-side__string-text l-side__string-text_min-pad">
-                        <span class="l-side__string-word">экспресс</span>
-                        <span class="l-side__string-word l-side__string-word_light">касса</span>
-                    </span>
+                          <a class="express-img" href="http://www.garantexpress.ru/"><img class="logo_ee" src="img/logo_ee_cashbox.svg"></a>
                 </div>
                 <div class="l-side__string l-side__string_hovered">
                     <div class="l-side__img">
@@ -97,19 +93,12 @@
                         <a href="#" class="header-top__img-right"><img src="img/exit.png"></a>
                     </div>
                 </div>
-                <div class="bread-crumbs bread-crumbs__header">
-                    <div class="bread-crumbs__container">
-                        <a href="#" class="bread-crumbs__previous">Кассы</a>
-                        <span class="bread-crumbs__arr">></span>
-                        <span>Касса №1 в продовольственном отделе</span>
-                    </div>
-                </div>
             </div>
             
             <form action="">
                 <div class="flex-centered">
                     <div class="form form_marg-none">
-                        <h1 class="form__title">Информация о кассе</h1>
+                        <h1 class="form__title">Добавить кассу</h1>
                         <div>
                             <div class="form__block-flex">
                                 <label for="rnm" class="form__label" for="login">РНМ (получается на сайте nalog.ru)</label>
@@ -128,18 +117,18 @@
                                 <input id="name_kas" class="form__input login" type="text">
                             </div>
                         </div>
-                        <div class="warning-block-position">
+                        <div class="warning-block-position hide">
                             <div class="warning-block">
-                                <p class="warning-block__text">Касса зарегистрирована 15.08.2018 в 13:30.</p>
-                                <p class="warning-block__text">Не используйте функцию "Изменить кассу" при замене фискального накопителя. Она применяется только для изменения ошибочно зарегистрированных данных. При замене ФН отмените регистрацию кассы и добавьте ее с новым номером ФН.</p>
+                                <p class="warning-block__text">При желании можно добавить любой поясняющий текст и убрать класс hide</p>
+                                <a href="#" class="form__links">OK</a>
                             </div>
-                            <div class="warning-block__btn">
-                                <input class="form__button form__button_margin form__button_cancel" type="button" value="Отменить регистрацию">
-                            </div>                            
                         </div>
                         <div>
-                            <input class="form__button form__button_margin" type="button" value="Изменить кассу">
-                        </div>
+                <a class="waves-effect waves-light btn-large form__button_padding">Продолжить</a>
+            </div>
+                         <div>
+                <a class="waves-effect waves-light btn-large form__button_margin form__button_padding grey lighten-1">Отменить</a>
+            </div>
                     </div>
                 </div>
             </form>

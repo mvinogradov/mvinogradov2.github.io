@@ -41,7 +41,7 @@ $(document).ready(function() {
     }); 
     
 // ввод только цыфр в инпуты
-    $('input#fns, input#kpp, input#rnm, input#nfn, input#zn').keypress(function(event){
+    $('input#fns, input#kpp, input#rnm, input#nfn, input#numb_zn').keypress(function(event){
 		var key, keyChar;
 		if(!event) var event = window.event;
 		if (event.keyCode) key = event.keyCode;
@@ -53,7 +53,7 @@ $(document).ready(function() {
     });
 // клик по tr
     $("tr").on("click", "td", function() {
-        if(!$(this).hasClass("table__td_six")){
+        if(!$(this).hasClass("table__td_six") && !$(this).parent("tr").hasClass("table__tr_header")){
             window.location = $(this).parent("tr").data("href"); 
         }
     });
@@ -61,9 +61,9 @@ $(document).ready(function() {
             window.location = $(this).data("href");
     });
 // открыть фильтры
-$(".button-filtres").on("click", function(){
-   $(".header-top__container_v2").toggleClass("opened") 
-});
+    $(".button-filtres").on("click", function(){
+       $(".header-top__container_v2").toggleClass("opened") 
+    });
 
 
 

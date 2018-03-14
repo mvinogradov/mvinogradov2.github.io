@@ -1,97 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Экспресс касса</title>
-    <link rel="icon" href="img/favicon.png" type="image/x-icon"> 
-	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-	<link rel="stylesheet" href="css/libs.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экспресс касса</title>
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
-	<header>
+    <header>
         <div class="header-preloader">
             <div class="line-preload"></div>
         </div>
         <div class="header-top">
-	       <div class="header-top__container container">
-	            <div class="header-top__left-logo">
+            <div class="header-top__container container">
+                <div class="header-top__left-logo">
                     <a class="express-img" href="http://www.garantexpress.ru/"><img class="logo_ee" src="img/logo_ee_cashbox.svg"></a>
                 </div>
-	            <div>
-	                <img class="vsostave" src="img/vsostave.png">
-	            </div>
-	        </div>
-	    </div>
-	    <div class="header-bottom">
-	        <nav class="container">
+                <div>
+                    <img class="vsostave" src="img/vsostave.png">
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <nav class="container">
                 <div class="menu_btn">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                 </div>
-	            <ul class="header-bottom__nav">
-                    <a href="#"><li class="header-bottom__nav-parag">Войти в Экспресс кассу</li></a>
-                    <a href="#"><li class="header-bottom__nav-parag">Настроить кассу</li></a>
-                    <a href="#"><li class="header-bottom__nav-parag">Проверить чек</li></a>
-                    <a href="#"><li class="header-bottom__nav-parag">Как это работает?</li></a>
-                    <a href="#"><li class="header-bottom__nav-parag">Оставить заявку</li></a>
-	            </ul>
-	        </nav>
-	    </div>
-	</header>
-	
-	<div class="bread-crumbs">
-	    <div class="container">
-	        <a href="#" class="bread-crumbs__previous">Авторизация</a>
-	        <span class="bread-crumbs__arr">></span>
-	        <span>Выбор сертификата</span>
-	    </div>
-	</div>
-	
-	<form action="">
+                <ul class="header-bottom__nav">
+                    <a href="#">
+                        <li class="header-bottom__nav-parag">Войти в Экспресс кассу</li>
+                    </a>
+                    <a href="#">
+                        <li class="header-bottom__nav-parag">Настроить кассу</li>
+                    </a>
+                    <a href="#">
+                        <li class="header-bottom__nav-parag">Проверить чек</li>
+                    </a>
+                    <a href="#">
+                        <li class="header-bottom__nav-parag">Как это работает?</li>
+                    </a>
+                    <a href="#">
+                        <li class="header-bottom__nav-parag">Оставить заявку</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="bread-crumbs">
+        <div class="container">
+            <a href="#" class="bread-crumbs__previous">Авторизация</a>
+            <span class="bread-crumbs__arr">></span>
+            <span>Выбор сертификата</span>
+        </div>
+    </div>
+
+    <form action="">
         <div class="form">
             <h1 class="form__title">Войти в Экспресс кассу</h1>
-            <div>
-                <div class="row row_margin_none">
-                    <div class="input-field col s12">
-                        <select>
-      <option value="" disabled selected>Choose your option</option>
-      <option value="1">Павлов Николай Геннадьевич (действует до 01.11.2018)</option>
-      <option value="2">Петров Николай Владимирович (действует до 01.12.2018)</option>
-      <option value="3">Павлов Максим Геннадьевич (действует до 01.09.2018)</option>
-    </select>
-    <label>Выберите сертификат</label>
-                         <script>
-                             $(document).ready(function() {
-    $('select').material_select();
-  });</script>
-                    </div>
+             <div>
+                <div class="form__block-flex">
+                    <label class="form__label up" for="select">Выберите сертификат</label>
+                    <select class="form__input form__input_select" name="">
+                        <option>Павлов Николай Геннадьевич (действует до 01.11.2018)</option>
+                        <option>Петров Николай Владимирович (действует до 01.12.2018)</option>
+                        <option>Павлов Максим Геннадьевич (действует до 01.09.2018)</option>
+                        <option>Павлов Петр Геннадьевич (действует до 01.06.2018)</option>
+                    </select>
+                    <div class="csp">
+                        <a class="crypto" href="https://www.cryptopro.ru/sites/default/files/products/cades/demopage/main.html" target="_blank">Плагин КриптоПро не установлен.</a>
                 </div>
-                <div class="csp">
-                        <a class="crypto" href="https://www.cryptopro.ru/sites/default/files/products/cades/demopage/main.html" target="_blank">Плагин КриптоПро</a> не установлен.
                 </div>
-                
                 
             </div>
             <div class="warning-block-position">
                 <div class="warning-block">
-                    <p class="warning-block__text">Для продолжения работы ваш сертификат должен быть зарегистрирован как сертификат участника электронного документооборота счетов-фактур в электронной форме по ТКС с оператором ЭДО «Электронный Экспресс». Продолжая, вы соглашаетесь на проверку. Мы проверим ваши данные и в случае необходимости зарегистрируем.</p>
+                    <p class="warning-block__text">Для продолжения работы ваш сертификат должен быть зарегистрирован как сертификат участника электронного документооборота счетов-фактур в&nbsp;электронной форме по&nbsp;ТКС с&nbsp;оператором ЭДО &laquo;Электронный Экспресс&raquo;. Продолжая, вы&nbsp;соглашаетесь на&nbsp;проверку. Мы&nbsp;проверим ваши данные и&nbsp;в&nbsp;случае необходимости зарегистрируем.</p>
                 </div>
             </div>
             <div>
-                <a class="waves-effect waves-light btn-large btn_myS form__button_margin">Продолжить</a>
+                <a class="waves-effect waves-light btn-large form__button_margin form__button_padding">Продолжить</a>
             </div>
         </div>
-	</form>
-   
-	
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="js/libs.min.js"></script>
-	<script src="js/main.js"></script>
+    </form>
+    <script type="text/javascript" src="js/libs.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 </html>

@@ -16,10 +16,11 @@ nav ul li {
     float: none;
 }
 
-/*select {
+select {
     font-family: inherit;
     display: block;
-}*/
+    padding: 0px;
+}
 
 nav ul a:hover {
     background: inherit;
@@ -582,6 +583,7 @@ body.gray-bg {
 
 .form__button_margin {
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .form__button_margin_cert {
@@ -1151,7 +1153,7 @@ body.gray-bg {
 
 .csp {
     position: absolute;
-    top: 38px;
+    top: 50px;
     color: #828282;
     font-size: 12px;
 }
@@ -1344,6 +1346,10 @@ body.gray-bg {
     .bread-crumbs__container {
         padding-left: 70px;
     }
+    .form__button_padding_none {
+    
+    padding: 0 28px; 
+}
 }
 
 @media only screen and (max-height: 850px) {
@@ -1468,8 +1474,10 @@ body.gray-bg {
     .header-top {
         padding-top: 10px;
     }
+    .form__button_padding {
+    padding: 0 23px;
 }
-
+}
 
 
 @media only screen and (max-width: 530px) {
@@ -1529,6 +1537,7 @@ body.gray-bg {
 
 @media only screen and (max-width: 480px) {
     /**/
+    
 }
 
 @media only screen and (max-width: 400px) {
@@ -1545,12 +1554,17 @@ body.gray-bg {
     .table-box {
         padding-top: 160px;
     }
+    .form__button_padding {
+    padding: 0 18px;
+}
 }
 
 /* Custom, iPhone Retina */
 
 @media only screen and (max-width: 320px) {
-    /**/
+   .form__button_padding {
+    padding: 0 13px;
+}
 }
 
 /*==========  Mobile First  ==========*/
@@ -1558,7 +1572,7 @@ body.gray-bg {
 /* Custom, iPhone Retina */
 
 @media only screen and (min-width: 320px) {
-    /**/
+  /**/  
 }
 
 /* Extra Small Devices, Phones */
@@ -1613,4 +1627,17 @@ tbody tr {
 }
 .header-bottom__nav a {
     padding: 0px;
+}
+
+    .form__input_select {
+            line-height: 45px !important;
+    height: 45px !important;
+    }
+.form__input_select option{
+            line-height: 45px !important;
+    height: 45px !important;
+    }
+.form__button_padding_none {
+    
+    padding: 0 14px; 
 }

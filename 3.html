@@ -76,7 +76,8 @@
                 <div class="row row_margin_none">
                     <div class="input-field col s12">
                         <input disabled value="Центр технического обслуживания “Авангард”" id="orgname" type="text" class="validate grey lighten-3 input_disable_grey">
-                        <label for="orgname">Полное наименование организации (ФИО ИП)</label>
+                        <label class="hide-on-small-only" for="orgname">Полное наименование организации (ФИО ИП)</label>
+                        <label class="hide-on-med-and-up" for="orgname">Наименование (ФИО ИП)</label>
                     </div>
                 </div>
 
@@ -100,14 +101,6 @@
                     <div class="input-field col s12 m6">
                         <input id="fns" type="text" class="validate" minlength="4" maxlength="4">
                         <label for="fns">Код ФНС</label>
-                    </div>
-                </div>
-
-
-                <div class="row row_margin_none">
-                    <div class="input-field col s12">
-                        <input disabled value="г. Москва, Научный проезд 19" id="adres" type="text" class="validate grey lighten-3 input_disable_grey">
-                        <label for="adres">Местонахождение организации (место жительства ИП)</label>
                     </div>
                 </div>
                 <div class="row row_margin_none">
@@ -145,7 +138,7 @@
                 </div>
             </div>
             <div>
-                <a class="waves-effect waves-light btn-large btn_myS">Продолжить</a>
+                <a class="waves-effect waves-light btn-large form__button_padding">Продолжить</a>
             </div>
         </div>
     </form>

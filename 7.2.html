@@ -20,11 +20,7 @@
             </div>
             <div class="fixed-l-menu">
                 <div class="l-side__string l-side__string_pad-bot">
-                    <a class="express-img" href="http://www.garantexpress.ru/"><img class="logo_ee" src="img/logo.png"></a>     
-                    <span class="l-side__string-text l-side__string-text_min-pad">
-                        <span class="l-side__string-word">экспресс</span>
-                        <span class="l-side__string-word l-side__string-word_light">касса</span>
-                    </span>
+                         <a class="express-img" href="http://www.garantexpress.ru/"><img class="logo_ee" src="img/logo_ee_cashbox.svg"></a>
                 </div>
                 <div class="l-side__string l-side__string_hovered">
                     <div class="l-side__img">
@@ -97,20 +93,49 @@
                         <a href="#" class="header-top__img-right"><img src="img/exit.png"></a>
                     </div>
                 </div>
-            </div>     
+                <div class="bread-crumbs bread-crumbs__header">
+                    <div class="bread-crumbs__container">
+                        <a href="#" class="bread-crumbs__previous">Кассы</a>
+                        <span class="bread-crumbs__arr">></span>
+                        <span>Касса №1 в продовольственном отделе</span>
+                    </div>
+                </div>
+            </div>
+            
             <form action="">
                 <div class="flex-centered">
                     <div class="form form_marg-none">
-                        <h1 class="form__title">Проверка регистрации <br>кассы в ФНС</h1>
+                        <h1 class="form__title">Информация о кассе</h1>
                         <div>
                             <div class="form__block-flex">
-                             <div class="loader"></div> 
+                                <label for="rnm" class="form__label" for="login">РНМ (получается на сайте nalog.ru)</label>
+                                <input class="form__input login" id="rnm" type="text">
                             </div>
                             <div class="form__block-flex">
-                                 <p class="form__block-text">В случае успешной проверки вас направит на подписание акта о завершении работ. Обычно регистрация кассы занимает около 5 минут.</p>
+                                <label for="numb_fn" class="form__label" for="login">Номер ФН</label>
+                                <input class="form__input login" id="numb_fn" type="text">
                             </div>
-                                                        
+                            <div class="form__block-flex">
+                                <label for="numb_zn" class="form__label" for="login">Заводской номер</label>
+                                <input id="numb_zn" class="form__input login" type="text">
+                            </div>
+                            <div class="form__block-flex">
+                                <label for="name_kas" class="form__label" for="login">Название кассы</label>
+                                <input id="name_kas" class="form__input login" type="text">
+                            </div>
                         </div>
+                        <div class="warning-block-position">
+                            <div class="warning-block">
+                                <p class="warning-block__text">Касса зарегистрирована 15.08.2018 в 13:30.</p>
+                                <p class="warning-block__text">Не&nbsp;используйте функцию &laquo;Изменить кассу&raquo; при замене фискального накопителя. Она применяется только для изменения ошибочно зарегистрированных данных. При замене&nbsp;ФН отключите кассу и&nbsp;добавьте ее&nbsp;с&nbsp;новым номером&nbsp;ФН.</p>
+                            </div>
+                            <div>     
+                <a class="waves-effect waves-light btn-large form__button_margin form__button_padding_none form__button_padding grey lighten-1">Отключить</a>
+                            </div>                            
+                        </div>
+                        <div>
+                <a class="waves-effect waves-light btn-large form__button_padding">Изменить кассу</a>
+            </div>
                     </div>
                 </div>
             </form>
@@ -119,7 +144,6 @@
 	
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="js/libs.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
