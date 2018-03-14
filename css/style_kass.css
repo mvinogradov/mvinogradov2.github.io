@@ -1,0 +1,302 @@
+.menu {
+    width: 206px;
+    height: 100%;
+    background-color: #fff;
+    float: left;
+}
+
+
+.logo {
+  /*  float: left;*/
+    background-image: url(../ico/ee_logo.png);
+    width: 238px;
+    height: 56px; 
+    margin-top: 42px;
+   margin-bottom: 30px; 
+}
+.status_good {
+    background-image: url(../ico/status_kkt_reg.png);
+    width: 16px;
+    height: 16px;
+}
+.button_menu {
+    list-style-type: none;
+    margin-top: 148px;
+}
+
+.edoc {
+    background-image: url(../ico/button_center.png);
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-top: 9px;
+    margin-right:18px;
+}
+
+.licenz{
+    background-image: url(../ico/button_otchet.png);
+    width: 24px;
+    height: 7px;
+    float: left;
+    margin-top: 19px;
+    margin-right:23px;
+    margin-left: 4px;
+}
+
+.kass {
+    background-image: url(../ico/button_kassa.png);
+    width: 28px;
+    height: 29px;
+    float: left;
+    margin-top: 9px;
+    margin-right:19px;
+    margin-left: 3px;
+}
+.kass_act {
+    background-image: url(../ico/button_kassa_link.png);
+    width: 28px;
+    height: 29px;
+    float: left;
+    margin-top: 9px;
+    margin-right:19px;
+    margin-left: 3px;
+    color: #1484c1;
+}
+.kass_bar {
+    background-image: url(../ico/button_kassa.png);
+    width: 28px;
+    height: 29px;
+    float: left;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.check {
+    background-image: url(../ico/button_check.png);
+    width: 21px;
+    height: 23px;
+    float: left;
+    margin-top: 9px;
+    margin-right: 25px;
+    margin-left: 5px;
+}
+.check_row {
+    background-image: url(../ico/button_check.png);
+    width: 21px;
+    height: 23px;
+    float: left;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.check_act {
+    background-image: url(../ico/button_check_link.png);
+    width: 21px;
+    height: 23px;
+    float: left;
+    margin-top: 9px;
+    margin-right: 25px;
+    margin-left: 5px;
+    color: #1484c1;
+}
+
+.setting {
+    background-image: url(../ico/button_set.png);
+    width: 23px;
+    height: 23px;
+    float: left;
+    margin-top: 12px;
+    margin-right: 23px;
+    margin-left: 3px;
+}
+
+.button_text {
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+    font-size: 18px;
+    line-height: 15px;
+    margin-left: 40px;
+    color: black;
+    width: 95px;
+}
+.kass_button_text {
+    padding-top: 7px;
+}
+
+.check_button_text {
+    padding-top: 7px;
+}
+
+.setting_button_text {
+    padding-top: 7px;
+}
+
+.button_menu li {
+    margin-bottom: 60px;
+    height: 30px;
+}
+
+
+
+
+
+.lnk:hover .button_text {
+    color: #1484c1;
+}
+
+.lnk:hover .centr {
+    background-image: url(../ico/button_center_link.png);
+}
+
+.lnk:hover .otchet {
+    background-image: url(../ico/button_otchet_link.png);
+}
+
+.lnk:hover .kass {
+    background-image: url(../ico/button_kassa_link.png);
+}
+
+.lnk:hover .check {
+    background-image: url(../ico/button_check_link.png);
+}
+
+.lnk:hover .setting {
+    background-image: url(../ico/button_set_link.png);
+}
+
+
+.orgname {
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+    font-size: 20pt;
+    color: black;
+    font: bold;
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+.user {
+    width: 200px;
+    height: 25px;
+    float: right;
+    text-align: right;
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+    font-size: 20px;
+    margin-right: 24px;
+    margin-top: 16px;
+}
+
+.help_ico {
+    width: 10px;
+    height: 16px;
+    float: right;
+    background-image: url(../ico/help.png);
+    margin-right: 24px;
+    margin-top: 19px;
+}
+
+.exit_ico {
+    width: 24px;
+    height: 17px;
+    float: right;
+    margin-right: 24px;
+    background-image: url(../ico/exit.png);
+    margin-top: 19px;
+}
+
+.pers_cab {
+    width: 18px;
+    height: 17px;
+    float: right;
+    margin-right: 24px;
+    background-image: url(../ico/pers_cab.png);
+    margin-top: 19px;
+}
+
+.pers_cab:hover {
+    background-image: url(../ico/pers_cab_hover.png);
+}
+
+.exit_ico:hover {
+    background-image: url(../ico/exit_hover.png);
+}
+
+.help_ico:hover {
+    background-image: url(../ico/help_hover.png);
+}
+
+.menu_text {
+    float: left;
+    margin-top: 10px;
+    margin-left: 25px;
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+    font-size: 14pt;
+    display: block;
+}
+
+.cvet {
+    color: #1484c1;
+}
+
+ .header{
+      padding-left: 300px;
+}
+.main{
+      padding-left: 300px;
+}
+.footer{
+      padding-left: 300px;
+}
+
+.panelmy{
+    padding-bottom: 0px;
+    margin-bottom: 0;
+}
+.tabmy {
+  margin-top: 50px;  
+}
+.kkt_all {
+    color: #0071B8;
+}
+.kkt_trubl {
+    color: #E44143;
+}
+.kkt_alert {
+    color: #EFB900;
+}
+.kkt_work {
+    color: #00A550;
+}
+.tbl{
+    color: black;
+}
+.sort{
+    margin-top: 1px;
+}
+.orgname {
+    float: left;
+    margin-top: 16px;
+}
+.kkt_nav {
+    margin-top: 10px;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+.kkt_add {
+   margin-bottom: 20px; 
+}
+.tab_mar {
+    margin-top: 20px;
+}
+
+.kkt_rename {
+    background-image: url(../ico/7.1.png);
+    width: 496px;
+    height: 518px;
+    float: left;
+}

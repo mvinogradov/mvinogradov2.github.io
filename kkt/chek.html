@@ -1,0 +1,290 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Экспресс касса</title>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+     <link href="../css/style_kass.css" rel="stylesheet" type="text/css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="../js/materialize.js"></script>
+      <script type="text/javascript" src="../js/materialize.min.js"></script>
+</head>
+
+<body>
+    
+   <!-- Navbar goes here -->
+<ul id="slide-out" class="side-nav fixed">
+    <li><div class="user-view">
+              <a href="#!user">
+              <div class="logo" style="margin-bottom:20"></div>
+              </a>
+        </div> 
+    </li>
+    <li><div class="divider"></div></li>
+    <li><a class="waves-effect tabmy" href="kkt.html"><div class="kass"></div>Кассы</a></li>
+    <li><a class="waves-effect" href="chek.html"><div class="check_act"></div><div class="cvet">Чеки</div></a></li>
+    <li><a class="waves-effect" href="#!"><div class="licenz"></div>Лицензии</a></li>
+    <li><a class="waves-effect" href="#!"><div class="edoc"></div>Электронные документы</a></li>
+    <li><a class="waves-effect" href="#!"><div class="setting"></div>Настройки</a></li>                          
+</ul>
+   
+   
+   
+   
+    <!-- Page Layout here -->
+<div class="conteiner">
+   
+    <main class="row main">  
+           
+        <div class="col s12">      
+           
+            <div class="row card-panel grey lighten-3 panelmy">
+                <div class="row">
+                        <h4 class="orgname">Центр технческого обслуживания "Авангард"</h4>
+                        <a href="#">
+                            <div class="exit_ico"></div>
+                        </a>
+                        <a href="#">
+                            <div class="help_ico"></div>
+                        </a>
+                        <a href="https://portal.garantexpress.ru/" target="_blank">
+                            <div class="pers_cab"></div>
+                        </a>
+                        <div class="user">Виноградов М.Ю.</div>
+
+                    </div>
+       
+            <div class="row">
+                <nav>
+                    <div class="nav-wrapper grey lighten-3">
+                          <div class="col">
+                              <a href="kkt.html" class="breadcrumb"><i class="material-icons">arrow_back</i><div class="kass_bar">                    
+                            </div>Касса №1 в гипермаркете "Золотой"</a>
+                          </div>
+                    </div>
+                </nav>
+           </div>
+           
+           <div class="row">
+               <div class="input-field col s3" > 
+                  <a class="waves-effect waves-light btn green darken-1">Сохранить в csv</a>
+                  
+               </div>
+                      
+               <div class="input-field col s2">
+                   <select>
+                       <option value="Все">Все</option>
+                       <option value="1">Кассовый чек</option>
+                       <option value="2">Регистрация</option>
+                       <option value="3">Открытие смены</option>
+                   </select>
+                   <label>Тип чека</label>
+    
+                    <script>
+                        $(document).ready(function() {
+                            $('select').material_select();
+                        });
+                   </script>
+     
+              </div>
+              
+              <div class="input-field col s2"> 
+                  <input type="text" class="datepicker">
+                  <label>Дата с</label>
+                  <script>
+                    $('.datepicker').pickadate({
+                    selectMonths: true, // Creates a dropdown to control month
+                    selectYears: 15, // Creates a dropdown of 15 years to control year,
+                    today: 'Today',
+                    clear: 'Clear',
+                    close: 'Ok',
+                    closeOnSelect: false // Close upon selecting a date,
+                    }); 
+                  </script>
+              </div>
+                
+              <div class="input-field col s2"> 
+                  <input type="text" class="datepicker">
+                  <label>Дата по</label>
+                    <script>
+                    $('.datepicker').pickadate({
+                    selectMonths: true, // Creates a dropdown to control month
+                    selectYears: 15, // Creates a dropdown of 15 years to control year,
+                    today: 'Today',
+                    clear: 'Clear',
+                    close: 'Ok',
+                    closeOnSelect: false // Close upon selecting a date,
+                    }); 
+                    </script>
+              </div> 
+       
+              <div class="input-field col s2 right-align">
+                  <a class="waves-effect waves-light btn blue darken-2">Показать</a>
+              </div>
+               
+           </div>
+           
+    </div> 
+      <table class="highlight">
+        <thead>
+          <tr>
+                <th></th>
+                <th>Время</th>
+                <th>Тип</th>
+                <th>Приход</th>
+                <th>Расход</th>
+                <th>Номер чека</th>
+                <th>Форма оплаты</th>
+                <th>СНО</th>
+                <th>НДС 10%</th>
+                <th>НДС 18%</th>
+                <th>НДС 10/110%</th>
+                <th>НДС 18/118%</th>
+                <th></th>
+          </tr>
+        </thead>
+
+        <tbody>
+         <tr>
+            <td><div class="status_good"></div></td>
+            <td>16.02.18 09:55</td>
+            <td>Кассовый чек</td>
+            <td>55000</td>
+            <td></td>
+            <td>12</td>
+            <td>наличные</td>
+            <td>упрощенная</td>
+            <td>123</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><div class="status_good"></div></td>
+            <td>16.02.18 09:55</td>
+            <td>Кассовый чек</td>
+            <td>55000</td>
+            <td></td>
+            <td>12</td>
+            <td>наличные</td>
+            <td>упрощенная</td>
+            <td>123</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><div class="status_good"></div></td>
+            <td>16.02.18 09:55</td>
+            <td>Кассовый чек</td>
+            <td>55000</td>
+            <td></td>
+            <td>12</td>
+            <td>наличные</td>
+            <td>упрощенная</td>
+            <td>123</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><div class="status_good"></div></td>
+            <td>16.02.18 09:55</td>
+            <td>Кассовый чек</td>
+            <td>55000</td>
+            <td></td>
+            <td>12</td>
+            <td>наличные</td>
+            <td>упрощенная</td>
+            <td>123</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><div class="status_good"></div></td>
+            <td>16.02.18 09:55</td>
+            <td>Кассовый чек</td>
+            <td>55000</td>
+            <td></td>
+            <td>12</td>
+            <td>наличные</td>
+            <td>упрощенная</td>
+            <td>123</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+            <tr>
+            <td><div class="status_good"></div></td>
+            <td>16.02.18 09:55</td>
+            <td>Кассовый чек</td>
+            <td>55000</td>
+            <td></td>
+            <td>12</td>
+            <td>наличные</td>
+            <td>упрощенная</td>
+            <td>123</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+         
+        </tbody>
+      </table>
+
+     
+      </div>
+
+    </main>
+    <footer class="page-footer footer panelmy grey lighten-3 ">
+            <div class="row">
+              <div class="col s12">
+                <div class="input-field col s1">
+                   <input value="12150" id="first_name2" type="text" class="validate">
+                   <label class="active" for="first_name2">Приход</label>
+               </div>
+               <div class="input-field col s1">
+                   <input value="12150" id="first_name2" type="text" class="validate">
+                   <label class="active" for="first_name2">Расход</label>
+               </div>
+               <div class="input-field col s1">
+                   <input value="4567" id="first_name2" type="text" class="validate">
+                   <label class="active" for="first_name2">НДС 10%</label>
+               </div>
+               <div class="input-field col s1">
+                   <input value="0" id="first_name2" type="text" class="validate">
+                   <label class="active" for="first_name2">НДС 18%</label>
+               </div>
+               <div class="input-field col s1">
+                   <input value="0" id="first_name2" type="text" class="validate">
+                   <label class="active" for="first_name2">НДС 10/110%</label>
+               </div>
+               <div class="input-field col s1">
+                   <input value="0" id="first_name2" type="text" class="validate">
+                   <label class="active" for="first_name2">НДС 18/118%</label>
+               </div>
+                  <ul class="pagination  col right">
+    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+    <li class="active grey"><a href="#!">1</a></li>
+    <li class="waves-effect"><a href="#!">2</a></li>
+    <li class="waves-effect"><a href="#!">3</a></li>
+    <li class="waves-effect"><a href="#!">4</a></li>
+    <li class="waves-effect"><a href="#!">5</a></li>
+    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+  </ul>
+              </div>
+            </div>
+                  
+        </footer>
+   </div>
+   
+
+</body>
+</html>

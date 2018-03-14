@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Экспресс касса</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
+    <link href="../css/style_kass.css" rel="stylesheet" type="text/css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <!-- Navbar goes here -->
+<ul id="slide-out" class="side-nav fixed">
+    <li><div class="user-view">
+              <a href="#!user">
+              <div class="logo" style="margin-bottom:20"></div>
+              </a>
+        </div> 
+    </li>
+    <li><div class="divider"></div></li>
+    <li><a class="waves-effect tabmy" href="kkt.html"><div class="kass_act"></div><div class="cvet">Кассы</div></a></li>
+    <li><a class="waves-effect" href="chek.html"><div class="check"></div>Чеки</a></li>
+    <li><a class="waves-effect" href="#!"><div class="licenz"></div>Лицензии</a></li>
+    <li><a class="waves-effect" href="#!"><div class="edoc"></div>Электронные документы</a></li>
+    <li><a class="waves-effect" href="#!"><div class="setting"></div>Настройки</a></li>                          
+</ul>
+    <!-- Page Layout here -->
+    <main class="conteiner">
+        <div class="row main">
+            <div class="col s12">
+                <!-- Note that "m8 l9" was added -->
+                <div class="row card-panel grey lighten-3 panelmy">
+
+                    <div class="row">
+                        <h4 class="orgname">Центр технческого обслуживания "Авангард"</h4>
+                        <a href="#">
+                            <div class="exit_ico"></div>
+                        </a>
+                        <a href="#">
+                            <div class="help_ico"></div>
+                        </a>
+                        <a href="https://portal.garantexpress.ru/" target="_blank">
+                            <div class="pers_cab"></div>
+                        </a>
+                        <div class="user">Виноградов М.Ю.</div>
+
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s4">
+                            <input value="" id="first_name2" type="text" class="validate">
+                            <label class="active" for="first_name2">Название кассы</label>
+                        </div>
+                        <div class="input-field col s2">
+                            <input value="" id="first_name2" type="text" class="validate">
+                            <label class="active" for="first_name2">РНМ</label>
+                        </div>
+                        <div class="input-field col s2">
+                            <input value="" id="first_name2" type="text" class="validate">
+                            <label class="active" for="first_name2">Номер ФН</label>
+                        </div>
+                        <div class="input-field col s2">
+                            <input value="" id="first_name2" type="text" class="validate">
+                            <label class="active" for="first_name2">Заводской</label>
+                        </div>
+                        <div class="input-field col s2 right-align">
+                  <a class="waves-effect waves-light btn blue darken-2">Показать</a>
+              </div>
+                    </div>
+
+               
+               <div class="row panelmy">
+    <div class="col s12">
+        <div class="input-field col s3  kkt_add" > 
+                  <a class="waves-effect waves-light btn green darken-1">Добавить кассу</a>
+                  
+               </div>
+      <ul class="tabs grey lighten-3 col s9 tab_mar">
+          <li class="tab col s3" ><a class="active" href="#test1"><div class="kkt_all">Все кассы [10]</div></a></li>
+        <li class="tab col s3"><a href="#test2"><div class="kkt_trubl">Проблемные [3]</div></a></li>
+        <li class="tab col s3"><a href="#test3"><div class="kkt_alert">Требующие внимания [1]</div></a></li>
+        <li class="tab col s3"><a href="#test4"><div class="kkt_work">Работающие [4]</div></a></li>
+      </ul>
+    </div>
+   </div>
+  </div> 
+                
+
+                <table class="highlight">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Касса</th>
+                            <th>Адрес установки</th>
+                            <th>Соединение  <i class="tiny material-icons ">arrow_downward</i></th>
+                            <th>Данные  <i class="tiny material-icons ">arrow_downward</i></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="status_good"></div>
+                            </td>
+                            <td ><a class="tbl" href="kkt_detale.html">Касса №1 в гипермаркете "Золотой"</a></td>
+                            <td><a class="tbl" href="kkt_detale.html">Москва, Ленинский проспект, дом 4, строение 1А</a></td>
+                            <td><a class="tbl" href="kkt_detale.html">16.02.18 09:55</a></td>
+                            <td><a class="tbl" href="kkt_detale.html">16.02.18 09:55</a></td>
+                            <td href='chek.html'>
+                                <a  href="chek.html" class="check_row_a"><div class="check_row"></div>Чеки</a>
+                    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="status_good"></div>
+                            </td>
+                            <td>Магазин "Кофе и Ко"</td>
+                            <td>Воронежская область, Панинский район, с. Борщево, ул. Гагарина, дом 1</td>
+                            <td>16.02.18 09:55</td>
+                            <td>16.02.18 09:55</td>
+                            <td>
+                                 <a  href="chek.html" class="check_row_a"><div class="check_row"></div>Чеки</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="status_good"></div>
+                            </td>
+                            <td>Кофейная точка в "ТЦ Московский"</td>
+                            <td>Ивановская область, Ивановский район, д. Андреево, д. 10</td>
+                            <td>16.02.18 09:55</td>
+                            <td>16.02.18 09:55</td>
+                            <td>
+                                 <a  href="chek.html" class="check_row_a"><div class="check_row"></div>Чеки</a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="status_good"></div>
+                            </td>
+                            <td>Касса №2 в гипермаркете "Золотой"</td>
+                            <td>Москва, Ленинский проспект, дом 4, строение 1А</td>
+                            <td>16.02.18 09:55</td>
+                            <td>16.02.18 09:55</td>
+                            <td>
+                                 <a  href="chek.html" class="check_row_a"><div class="check_row"></div>Чеки</a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="status_good"></div>
+                            </td>
+                            <td>Касса №2 в гипермаркете "Золотой"</td>
+                            <td>Москва, Ленинский проспект, дом 4, строение 1А</td>
+                            <td>16.02.18 09:55</td>
+                            <td>16.02.18 09:55</td>
+                            <td>
+                                 <a  href="chek.html" class="check_row_a"><div class="check_row"></div>Чеки</a>
+         
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+ <script>           
+jQuery( function($) {
+$('tbody tr[data-href]').addClass('clickable').click( function() {
+window.location = $(this).attr('data-href');
+}).find('a').hover( function() {
+$(this).parents('tr').unbind('click');
+}, function() {
+$(this).parents('tr').click( function() {
+window.location = $(this).attr('data-href');
+});
+});
+});
+                </script>
+            </div>
+
+        </div>
+    </main>
+ <footer class="page-footer footer panelmy grey lighten-3 ">
+          <div class="container">
+            <div class="row">
+              <div class="col s4 right">
+                <ul class="pagination">
+    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+    <li class="active grey"><a href="#!">1</a></li>
+    <li class="waves-effect"><a href="#!">2</a></li>
+    <li class="waves-effect"><a href="#!">3</a></li>
+    <li class="waves-effect"><a href="#!">4</a></li>
+    <li class="waves-effect"><a href="#!">5</a></li>
+    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+  </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../js/materialize.js"></script>
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+</body>
+
+</html>
