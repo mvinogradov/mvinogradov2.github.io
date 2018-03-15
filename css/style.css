@@ -1346,10 +1346,7 @@ body.gray-bg {
     .bread-crumbs__container {
         padding-left: 70px;
     }
-    .form__button_padding_none {
     
-    padding: 0 28px; 
-}
 }
 
 @media only screen and (max-height: 850px) {
@@ -1590,6 +1587,10 @@ body.gray-bg {
 /* Medium Devices, Desktops */
 
 @media only screen and (min-width: 992px) {
+    .form__button_padding_none {
+    
+    padding: 0 14px; 
+}
     /**/
 }
 
@@ -1637,7 +1638,3 @@ tbody tr {
             line-height: 45px !important;
     height: 45px !important;
     }
-.form__button_padding_none {
-    
-    padding: 0 14px; 
-}
