@@ -1,6 +1,12 @@
 @charset "UTF-8";
 /*-------------------------УБИРАЕМ ЛИШНЕЕ ОТ МАТЕРИАЛАЙЗ--------------------------------*/
-
+@font-face {
+font-family: "HelveticaNeueCyr";
+  src: url("font/HelveticaNeueCyr-Medium.otf"),
+  url("../fonts/ptserif-normal.ttf"), 
+  font-weight: normal;
+  font-style: normal;
+}
 /**/
 
 nav {
@@ -32,7 +38,7 @@ nav ul a:hover {
 /*-------------------------------------------------------------------------------------*/
 
 * {
-    font-family: 'Arial', sans-serif;
+    font-family: 'HelveticaNeueCyr','Arial', sans-serif;
     margin: 0;
     padding: 0;
 }
