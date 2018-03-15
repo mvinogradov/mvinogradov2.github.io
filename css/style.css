@@ -964,7 +964,7 @@ body.gray-bg {
 }
 
 .table__tr_header:hover .table__td {
-   color: #888;
+    color: #888;
     cursor: default;
 }
 
@@ -1331,7 +1331,7 @@ body.gray-bg {
     .bread-crumbs__container {
         padding-left: 70px;
     }
-    
+
 }
 
 @media only screen and (max-height: 850px) {
@@ -1457,8 +1457,8 @@ body.gray-bg {
         padding-top: 10px;
     }
     .form__button_padding {
-    padding: 0 23px;
-}
+        padding: 0 23px;
+    }
 }
 
 
@@ -1519,7 +1519,6 @@ body.gray-bg {
 
 @media only screen and (max-width: 480px) {
     /**/
-    
 }
 
 @media only screen and (max-width: 400px) {
@@ -1537,16 +1536,16 @@ body.gray-bg {
         padding-top: 160px;
     }
     .form__button_padding {
-    padding: 0 18px;
-}
+        padding: 0 18px;
+    }
 }
 
 /* Custom, iPhone Retina */
 
 @media only screen and (max-width: 320px) {
-   .form__button_padding {
-    padding: 0 13px;
-}
+    .form__button_padding {
+        padding: 0 13px;
+    }
 }
 
 /*==========  Mobile First  ==========*/
@@ -1554,7 +1553,7 @@ body.gray-bg {
 /* Custom, iPhone Retina */
 
 @media only screen and (min-width: 320px) {
-  /**/  
+    /**/
 }
 
 /* Extra Small Devices, Phones */
@@ -1573,9 +1572,9 @@ body.gray-bg {
 
 @media only screen and (min-width: 992px) {
     .form__button_padding_none {
-    
-    padding: 0 14px; 
-}
+
+        padding: 0 14px;
+    }
     /**/
 }
 
@@ -1601,27 +1600,36 @@ body.gray-bg {
 }
 
 .add_cash_btn {
-    max-width: 185px;
+    width: 195px;
     margin-left: 22px;
     margin-right: 40px;
 }
 
 .search_cash_btn {
-    max-width:185px;
+    width: 100px;
 }
 
 tbody tr {
     border-bottom: none;
 }
+
 .header-bottom__nav a {
     padding: 0px;
 }
 
-    .form__input_select {
-            line-height: 45px !important;
+.form__input_select {
+    line-height: 45px !important;
     height: 45px !important;
-    }
-.form__input_select option{
-            line-height: 45px !important;
+}
+
+.form__input_select option {
+    line-height: 45px !important;
     height: 45px !important;
-    }
+}
+
+.add_cash_icon_marg {
+   
+    margin-left: 10px;
+    margin-right: 0px !important;
+    
+}
