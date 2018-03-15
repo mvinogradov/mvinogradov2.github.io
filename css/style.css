@@ -2,10 +2,17 @@
 /*-------------------------УБИРАЕМ ЛИШНЕЕ ОТ МАТЕРИАЛАЙЗ--------------------------------*/
 @font-face {
 font-family: "HelveticaNeueCyr";
-  src: url("font/HelveticaNeueCyr-Medium.otf"),
-  url("font/HelveticaNeueCyr-Medium.otf"), 
+  src: url("font/HelveticaNeueCyr-Roman.otf"),
+  url("../font/HelveticaNeueCyr-Roman.otf"), 
   font-weight: normal;
   font-style: normal;
+}
+@font-face {
+font-family: "HelveticaNeueCyr";
+  src: url("font/HelveticaNeueCyr-Bold.otf"),
+  url("../font/HelveticaNeueCyr-Bold.otf"), 
+  font-weight: bold;
+  font-style: bold;
 }
 /**/
 
@@ -691,6 +698,7 @@ body.gray-bg {
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
+        display: block;
 }
 
 .l-side {
@@ -1521,8 +1529,11 @@ body.gray-bg {
 
 /* Extra Small Devices, Phones */
 
-@media only screen and (max-width: 480px) {
-    /**/
+@media only screen and (max-width: 512px) {
+   .header-top__text_media {
+       padding-bottom: 0px;
+    }
+    
 }
 
 @media only screen and (max-width: 400px) {
