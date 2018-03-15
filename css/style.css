@@ -714,7 +714,7 @@ body.gray-bg {
     position: fixed;
     top: 0;
     left: 0;
-    border-right: solid #f2f2f2 1px;
+    border-right: solid #f2f2f2 4px;
 }
 
 .l-side__img {
