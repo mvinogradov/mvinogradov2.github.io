@@ -3,7 +3,7 @@
 @font-face {
 font-family: "HelveticaNeueCyr";
   src: url("font/HelveticaNeueCyr-Medium.otf"),
-  url("../fonts/ptserif-normal.ttf"), 
+  url("font/HelveticaNeueCyr-Medium.otf"), 
   font-weight: normal;
   font-style: normal;
 }
@@ -949,10 +949,8 @@ body.gray-bg {
     border-bottom: 1px solid #f2f2f2;
 }
 
-.table__tr:hover .table__td {
-    color: #0079bc;
+.table__td_six:hover  {
     cursor: pointer;
-    background: #d7f1fd;
 }
 
 .table__tr:hover .hovered {
@@ -1638,4 +1636,8 @@ tbody tr {
     margin-left: 10px;
     margin-right: 0px !important;
     
+}
+
+.color_ico {
+    color: black;
 }
