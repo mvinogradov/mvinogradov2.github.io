@@ -8,7 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body class="gray-bg">
    
@@ -21,11 +21,7 @@
             </div>
             <div class="fixed-l-menu">
                 <div class="l-side__string l-side__string_pad-bot">
-                    <a class="express-img" href="http://www.garantexpress.ru/"><img class="logo_ee" src="img/logo.png"></a>     
-                    <span class="l-side__string-text l-side__string-text_min-pad">
-                        <span class="l-side__string-word">экспресс</span>
-                        <span class="l-side__string-word l-side__string-word_light">касса</span>
-                    </span>
+                   <a class="express-img" href="http://www.garantexpress.ru/"><img class="logo_ee" src="img/logo_ee_cashbox.svg"></a>
                 </div>
                 <div class="l-side__string l-side__string_hovered">
                     <div class="l-side__img">
@@ -98,170 +94,146 @@
                         <a href="#" class="header-top__img-right"><img src="img/exit.png"></a>
                     </div>
                 </div>
-                
-                <div class="row row_margin_none">
-       <div class="input-field col s3">
-          <input id="name_kas" type="text" class="validate">
-          <label for="name_kas">Название кассы</label>
-        </div>
-        <div class="input-field col s2">
-          <input id="rnm" type="text" class="validate" minlength="19" maxlength="19">
-          <label for="rnm">РНМ</label>
-        </div>
-        <div class="input-field col s2">
-          <input id="numb_fn" type="text" class="validate" minlength="19" maxlength="19">
-          <label for="numb_fn">Номер ФН</label>
-        </div>
-        <div class="input-field col s2">
-          <input id="numb_zn" type="text" class="validate" >
-          <label for="numb_zn">Заводской</label>
-        </div>
-         <div class="input-field col s2">
-        <a class="waves-effect waves-light btn search_cash_btn">Показать</a>
-        </div>
-      </div>
-                
+                <div class="header-top__container header-top__container_respons header-top__container_v2 container_paddings container_margin">
+                    <div class="header-top-block">
+                        <div class="form__block-flex form__block-flex_v2">
+                            <label for="name_kas" class="form__label form__label_v2" for="login">Название кассы</label>
+                            <input id="name_kas" class="form__input form__input_v2 login" type="text">
+                        </div>
+                        <div class="form__block-flex form__block-flex_v2">
+                            <label for="rnm" class="form__label form__label_v2" for="login">РНМ</label>
+                            <input class="form__input form__input_v2 login" id="rnm" type="text">
+                        </div>
+                        <div class="form__block-flex form__block-flex_v2">
+                            <label for="numb_fn" class="form__label form__label_v2" for="login">Номер ФН</label>
+                            <input class="form__input form__input_v2 login" id="numb_fn" type="text">
+                        </div>
+                        <div class="form__block-flex form__block-flex_v2">
+                            <label for="numb_zn" class="form__label form__label_v2" for="login">Заводской</label>
+                            <input id="numb_zn" class="form__input form__input_v2 login" type="text">
+                        </div>
+                        <div class="form__block-flex form__block-flex_v2">
+                        <a class="waves-effect waves-light btn search_cash_btn">Показать</a>
+                            </div>
+                    </div>
+                    <div class="button-filtres">
+                        <div class="inline">Поиск</div>
+                        <img src="img/next.png">
+                    </div>
+                </div>
             </div>
             <div class="table-box">
-                <div class="row row_not">
-       <div class="input-field col s3">
+                <div class="table-box-top">
                     <a class="waves-effect waves-light btn green add_cash_btn"><i class="material-icons left">add</i>Добавить кассу</a>
-                    </div>
-                    <div class="input-field col s2 ">
+                    <div class="checkbox-item">
                         <input hidden type="checkbox" id="test5"/>
                         <label for="test5">Все кассы (9)</label>
                     </div>
-                    <div class="input-field col s2 ">
+                    <div class="checkbox-item">
                         <input hidden type="checkbox" id="test6"/>
                         <label for="test6">Проблемные (2)</label>
                     </div>
-                    <div class="input-field col s2 ">
+                    <div class="checkbox-item">
                         <input hidden type="checkbox" id="test7"/>
                         <label for="test7">Требующие внимания (1)</label>
                     </div>
-                    <div class="input-field col s2 ">
-                        <input hidden type="checkbox" id="test8"/>
+                    <div class="checkbox-item">
+                        <input hidden type="radio" id="test8"/>
                         <label for="test8">Работающие (6)</label>
                     </div>
                 </div>
                 <div class="table-block">
-                   <table class="highlight">
-        <thead>
-          <tr >
-              <th></th>
-              <th>№</th>
-              <th>Касса</th>
-              <th>Модель</th>
-              <th>Адрес установки</th>
-              <th>Соединение</th>
-              <th>Данные</th>
-              <th>Чеки</th>
-              
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td><span class="circle circle_green"></span></td>
-            <td>1</td>
-            <td>Касса № 1 в продовольственном отделе</td>
-            <td>Атол 160Ф</td>
-            <td>г. Москва,	Научный проезд 19</td>
-            <td>02.02.2018 14:12</td>
-            <td>02.02.2018 14:12</td>
-            <td data-href="#123123"><img class="not-hovered" src="img/bills.png">
-            <img class="hovered" src="img/bills_blue.png"></td>
-          </tr>
-         <tr class="tr_my">
-            <td><span class="circle circle_green"></span></td>
-            <td>1</td>
-            <td>Касса № 1 в продовольственном отделе</td>
-            <td>Атол 160Ф</td>
-            <td>г. Москва,	Научный проезд 19</td>
-            <td>02.02.2018 14:12</td>
-            <td>02.02.2018 14:12</td>
-            <td data-href="#123123"><img class="not-hovered" src="img/bills.png">
-            <img class="hovered" src="img/bills_blue.png"></td>
-          </tr>
-          <tr>
-            <td><span class="circle circle_green"></span></td>
-            <td>1</td>
-            <td>Касса № 1 в продовольственном отделе</td>
-            <td>Атол 160Ф</td>
-            <td>г. Москва,	Научный проезд 19</td>
-            <td>02.02.2018 14:12</td>
-            <td>02.02.2018 14:12</td>
-            <td data-href="#123123"><img class="not-hovered" src="img/bills.png">
-            <img class="hovered" src="img/bills_blue.png"></td>
-          </tr>
-           <tr>
-            <td><span class="circle circle_green"></span></td>
-            <td>1</td>
-            <td>Касса № 1 в продовольственном отделе</td>
-            <td>Атол 160Ф</td>
-            <td>г. Москва,	Научный проезд 19</td>
-            <td>02.02.2018 14:12</td>
-            <td>02.02.2018 14:12</td>
-            <td data-href="#123123"><img class="not-hovered" src="img/bills.png">
-            <img class="hovered" src="img/bills_blue.png"></td>
-          </tr>
-           <tr>
-            <td><span class="circle circle_green"></span></td>
-            <td>1</td>
-            <td>Касса № 1 в продовольственном отделе</td>
-            <td>Атол 160Ф</td>
-            <td>г. Москва,	Научный проезд 19</td>
-            <td>02.02.2018 14:12</td>
-            <td>02.02.2018 14:12</td>
-            <td data-href="#123123"><img class="not-hovered" src="img/bills.png">
-            <img class="hovered" src="img/bills_blue.png"></td>
-          </tr>
-           <tr>
-            <td><span class="circle circle_green"></span></td>
-            <td>1</td>
-            <td>Касса № 1 в продовольственном отделе</td>
-            <td>Атол 160Ф</td>
-            <td>г. Москва,	Научный проезд 19</td>
-            <td>02.02.2018 14:12</td>
-            <td>02.02.2018 14:12</td>
-            <td data-href="#123123"><img class="not-hovered" src="img/bills.png">
-            <img class="hovered" src="img/bills_blue.png"></td>
-          </tr>
-             <tr>
-            <td><span class="circle circle_green"></span></td>
-            <td>1</td>
-            <td>Касса № 1 в продовольственном отделе</td>
-            <td>Атол 160Ф</td>
-            <td>г. Москва,	Научный проезд 19</td>
-            <td>02.02.2018 14:12</td>
-            <td>02.02.2018 14:12</td>
-            <td data-href="#123123"><img class="not-hovered" src="img/bills.png">
-            <img class="hovered" src="img/bills_blue.png"></td>
-          </tr>
-             <tr>
-            <td><span class="circle circle_green"></span></td>
-            <td>1</td>
-            <td>Касса № 1 в продовольственном отделе</td>
-            <td>Атол 160Ф</td>
-            <td>г. Москва,	Научный проезд 19</td>
-            <td>02.02.2018 14:12</td>
-            <td>02.02.2018 14:12</td>
-            <td data-href="#123123"><img class="not-hovered" src="img/bills.png">
-            <img class="hovered" src="img/bills_blue.png"></td>
-          </tr>
-             <tr>
-            <td><span class="circle circle_green"></span></td>
-            <td>1</td>
-            <td>Касса № 1 в продовольственном отделе</td>
-            <td>Атол 160Ф</td>
-            <td>г. Москва,	Научный проезд 19</td>
-            <td>02.02.2018 14:12</td>
-            <td>02.02.2018 14:12</td>
-            <td data-href="#123123"><img class="not-hovered" src="img/bills.png">
-            <img class="hovered" src="img/bills_blue.png"></td>
-          </tr>
-        </tbody>
-      </table>
+                    <table class="table">
+                        <tr class="table__tr table__tr_header">
+                            <td class="table__td table__td_empty"></td>
+                            <td class="table__td table__td_empty">№</td>
+                            <td class="table__td">Касса</td>
+                            <td class="table__td">Адрес установки</td>
+                            <td class="table__td">Модель</td>
+                            <td class="table__td">Соединение</td>
+                            <td class="table__td">Данные</td>
+                            <td class="table__td table__td_six">Чеки</td>
+                        </tr>
+                        <tr class="table__tr table__tr_main" data-href="#">
+                            <td class="table__td table__td_empty"><span class="circle circle_red"></span></td>
+                             <td class="table__td">1</td>
+                            <td class="table__td">Касса №1 в продовольственном отделе</td>
+                            <td class="table__td">г. Москва,	Научный проезд 19</td>
+                            <td class="table__td">Атол 115-Ф</td>
+                            <td class="table__td">02.02.2018 14:12</td>
+                            <td class="table__td">02.02.2018 14:12</td>
+                            <td class="table__td table__td_six" data-href="#123123">
+                                <img class="not-hovered" src="img/bills.png">
+                                <img class="hovered" src="img/bills_blue.png">
+                            </td>
+                        </tr>
+                         <tr class="table__tr table__tr_main" data-href="#">
+                            <td class="table__td table__td_empty"><span class="circle circle_red"></span></td>
+                             <td class="table__td">1</td>
+                            <td class="table__td">Касса №1 в продовольственном отделе</td>
+                            <td class="table__td">г. Москва,	Научный проезд 19</td>
+                            <td class="table__td">Атол 115-Ф</td>
+                            <td class="table__td">02.02.2018 14:12</td>
+                            <td class="table__td">02.02.2018 14:12</td>
+                            <td class="table__td table__td_six" data-href="#123123">
+                                <img class="not-hovered" src="img/bills.png">
+                                <img class="hovered" src="img/bills_blue.png">
+                            </td>
+                        </tr>
+                         <tr class="table__tr table__tr_main" data-href="#">
+                            <td class="table__td table__td_empty"><span class="circle circle_red"></span></td>
+                             <td class="table__td">1</td>
+                            <td class="table__td">Касса №1 в продовольственном отделе</td>
+                            <td class="table__td">г. Москва,	Научный проезд 19</td>
+                            <td class="table__td">Атол 115-Ф</td>
+                            <td class="table__td">02.02.2018 14:12</td>
+                            <td class="table__td">02.02.2018 14:12</td>
+                            <td class="table__td table__td_six" data-href="#123123">
+                                <img class="not-hovered" src="img/bills.png">
+                                <img class="hovered" src="img/bills_blue.png">
+                            </td>
+                        </tr>
+                         <tr class="table__tr table__tr_main" data-href="#">
+                            <td class="table__td table__td_empty"><span class="circle circle_red"></span></td>
+                             <td class="table__td">1</td>
+                            <td class="table__td">Касса №1 в продовольственном отделе</td>
+                            <td class="table__td">г. Москва,	Научный проезд 19</td>
+                            <td class="table__td">Атол 115-Ф</td>
+                            <td class="table__td">02.02.2018 14:12</td>
+                            <td class="table__td">02.02.2018 14:12</td>
+                            <td class="table__td table__td_six" data-href="#123123">
+                                <img class="not-hovered" src="img/bills.png">
+                                <img class="hovered" src="img/bills_blue.png">
+                            </td>
+                        </tr>
+                         <tr class="table__tr table__tr_main" data-href="#">
+                            <td class="table__td table__td_empty"><span class="circle circle_red"></span></td>
+                             <td class="table__td">1</td>
+                            <td class="table__td">Касса №1 в продовольственном отделе</td>
+                            <td class="table__td">г. Москва,	Научный проезд 19</td>
+                            <td class="table__td">Атол 115-Ф</td>
+                            <td class="table__td">02.02.2018 14:12</td>
+                            <td class="table__td">02.02.2018 14:12</td>
+                            <td class="table__td table__td_six" data-href="#123123">
+                                <img class="not-hovered" src="img/bills.png">
+                                <img class="hovered" src="img/bills_blue.png">
+                            </td>
+                        </tr>
+                         <tr class="table__tr table__tr_main" data-href="#">
+                            <td class="table__td table__td_empty"><span class="circle circle_red"></span></td>
+                             <td class="table__td">1</td>
+                            <td class="table__td">Касса №1 в продовольственном отделе</td>
+                            <td class="table__td">г. Москва,	Научный проезд 19</td>
+                            <td class="table__td">Атол 115-Ф</td>
+                            <td class="table__td">02.02.2018 14:12</td>
+                            <td class="table__td">02.02.2018 14:12</td>
+                            <td class="table__td table__td_six" data-href="#123123">
+                                <img class="not-hovered" src="img/bills.png">
+                                <img class="hovered" src="img/bills_blue.png">
+                            </td>
+                        </tr>
+            
+                    </table>
                     <ul class="pagination block-pagination">
                         <li class="disabled block-pagination__arrows"><a href="#!"><img src="img/prev.png"></a></li>
                         <li class="active"><a href="#!">1</a></li>
