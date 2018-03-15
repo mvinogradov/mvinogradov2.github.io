@@ -2,14 +2,14 @@
 /*-------------------------УБИРАЕМ ЛИШНЕЕ ОТ МАТЕРИАЛАЙЗ--------------------------------*/
 @font-face {
 font-family: "HelveticaNeueCyr";
-  src: url("font/HelveticaNeueCyr-Roman.otf"),
+  src: url("..font/HelveticaNeueCyr-Roman.otf"),
   url("../font/HelveticaNeueCyr-Roman.otf"), 
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
 font-family: "HelveticaNeueCyr";
-  src: url("font/HelveticaNeueCyr-Bold.otf"),
+  src: url("..font/HelveticaNeueCyr-Bold.otf"),
   url("../font/HelveticaNeueCyr-Bold.otf"), 
   font-weight: bold;
   font-style: bold;
