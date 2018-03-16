@@ -1,18 +1,16 @@
 @charset "UTF-8";
 /*-------------------------УБИРАЕМ ЛИШНЕЕ ОТ МАТЕРИАЛАЙЗ--------------------------------*/
 @font-face {
-font-family: "HelveticaNeueCyr";
-  src: url("..font/HelveticaNeueCyr-Roman.otf"),
-  url("../font/HelveticaNeueCyr-Roman.otf"), 
+font-family: 'HelveticaNeueCyr';
+  src: url("../font/HelveticaNeueCyr-Roman.otf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
 font-family: "HelveticaNeueCyr";
-  src: url("..font/HelveticaNeueCyr-Bold.otf"),
-  url("../font/HelveticaNeueCyr-Bold.otf"), 
+  src: url("../font/HelveticaNeueCyr-Bold.otf");
   font-weight: bold;
-  font-style: bold;
+    font-style: normal;
 }
 /**/
 
@@ -1160,7 +1158,7 @@ body.gray-bg {
 }
 
 .logo_ee {
-    height: 56px;
+    height: 36px;
 }
 
 .crypto {
